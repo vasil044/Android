@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/intentalo"
+        android:layout_width="94dp"
+        android:layout_height="41dp"
+        android:layout_alignBottom="@+id/numero"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:gravity="center_horizontal|center"
+        android:text="Intentalo" />
+
+    <TextView
+        android:id="@+id/etiquetaSuperior"
+        android:layout_width="match_parent"
+        android:layout_height="115dp" />
+
+    <EditText
+        android:id="@+id/numero"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/probar"
+        android:layout_marginBottom="92dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+    <Button
+        android:id="@+id/probar"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="31dp"
+        android:layout_marginEnd="20dp"
+        android:text="PROBAR"
+        android:onClick="adivinar"/>
+</RelativeLayout>
