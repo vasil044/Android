@@ -33,7 +33,7 @@ public class Deportes extends ArrayAdapter<Opcion> {
         deporte.setText(mielemento.getNombre());
         checkBox.setChecked(mielemento.marcado);
 
-
+        return (item);
     }
 
     //Quieren jugar conmigo, pero se tiran llevando dos ases

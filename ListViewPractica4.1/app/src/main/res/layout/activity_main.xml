@@ -1,20 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@android:color/background_dark"
+    android:background="#d2f861"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/textoSuperior"
-        android:layout_width="wrap_content"
+        android:layout_width="373dp"
         android:layout_height="wrap_content"
+        android:layout_x="5dp"
+        android:layout_y="3dp"
         android:gravity="center_vertical|fill_vertical|center"
         android:text="Selecciona los deportes que te gustan y pulsa aceptar"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/black"
+        android:textSize="20dp" />
 
     <ScrollView
         android:layout_width="409dp"
@@ -24,7 +27,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/background_dark"
-            android:orientation="vertical"></LinearLayout>
+            android:orientation="vertical">
+
+        </LinearLayout>
     </ScrollView>
 
     <Button
@@ -32,11 +37,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_x="156dp"
+        android:layout_y="60dp"
         android:text="Aceptar" />
 
     <ListView
         android:id="@+id/miLista"
         android:layout_width="match_parent"
-        android:layout_height="567dp" />
+        android:layout_height="451dp"
+        android:layout_x="0dp"
+        android:layout_y="116dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-</LinearLayout>
+</AbsoluteLayout>
