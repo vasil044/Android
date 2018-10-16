@@ -18,7 +18,7 @@ public class Opcion {
     public int getIcono(){
         return icono;
     }
-    public boolean seleccionado(){
+    public boolean getSeleccionado(){
         return marcado;
     }
     public void setNombre(String nom){
