@@ -39,11 +39,11 @@ public class MainActivity extends AppCompatActivity {
 
     public void adivinar(View v){
 
-        //numIntroducido = Integer.parseInt(valor.getText().toString());
+        numIntroducido = Integer.parseInt(valor.getText().toString());
 
         texto.setText(random);
 
-        /*while (correcto==false){
+        while (correcto==false){
             if (numIntroducido<random){
                 texto.setText(superior);
             }else if (numIntroducido>random){
@@ -53,6 +53,6 @@ public class MainActivity extends AppCompatActivity {
                 correcto=true;
                 contador=0;
             }
-        }*/
+        }
     }
 }

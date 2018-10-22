@@ -38,5 +38,4 @@ public class Deportes extends ArrayAdapter<Opcion> {
 
     //Quieren jugar conmigo, pero se tiran llevando dos ases
     //tus criticas con como el tabaco, me las fumo y se convierten en ceniza.
-
 }
