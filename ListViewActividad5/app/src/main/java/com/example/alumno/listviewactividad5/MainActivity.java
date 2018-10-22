@@ -34,7 +34,10 @@ public class MainActivity extends AppCompatActivity {
         final ListView list = (ListView)findViewById(R.id.miLista);
 
 
-        listaCompra.add(new Articulo("nomrbre",false));
+        listaCompra.add(new Articulo("galletas",false));
+        listaCompra.add(new Articulo("pan", false));
+        listaCompra.add(new Articulo("lechuga", false));
+        listaCompra.add(new Articulo("chuleton", false));
 
         ArrayAdapter <Articulo> adaptador = new ArrayAdapter<Articulo>(MainActivity.this, android.R.layout.simple_list_item_1, listaCompra);
 
@@ -58,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    /*
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
@@ -71,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
             inflater.inflate(R.menu.menu_context_lista, menu);
         }
     }
+    */
 
+    /*
     @Override
     public boolean onContextItemSelected(MenuItem item) {
 
@@ -94,21 +100,21 @@ public class MainActivity extends AppCompatActivity {
                 return super.onContextItemSelected(item);
         }
     }
+    */
 
-
-    /*
     public boolean onCreateOptionsMenu(Menu miMenu){
         getMenuInflater().inflate(R.menu.menu_activity, miMenu);
         return true;
     }
-    */
-    /*
+
+
+
     public boolean onOptionsItemSeleccted(MenuItem opcMenu){
         int id = opcMenu.getItemId();
 
         if (id==R.id.nuevoArticulo){
             return true;
-            nuevoArticuloLista(null);
+            //nuevoArticuloLista(null);
         }
 
         if (id==R.id.borrarLista){
@@ -117,5 +123,5 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(opcMenu);
     }
-    */
+
 }

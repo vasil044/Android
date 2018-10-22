@@ -11,11 +11,8 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
-public class
-
-
-EditDFragment extends DialogFragment  {
+/*
+public class EditDFragment extends DialogFragment  {
 
     public interface EditNameDialogListener {
         public void onDialogPositiveClick(DialogFragment dialog, String name, String password);
@@ -83,3 +80,4 @@ EditDFragment extends DialogFragment  {
 
 
 }
+*/

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_margin="10dp"
+        android:gravity="center_horizontal"
+        android:text="Actividad principal. Presiona algun boton para iniciar la subactividad. Primero debes dar de alta un contacto."
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/buttonAltaContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="95dp"
+        android:text="Alta Contacto" />
+
+    <Button
+        android:id="@+id/buttonModificarContacto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/buttonAltaContacto"
+        android:layout_marginEnd="21dp"
+        android:text="Modificar Contacto" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="154dp"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:text="Datos de Contacto"
+        android:textSize="18sp" />
+
+</RelativeLayout>
