@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item android:id="@+id/MenuOp1" android:title="Opcion 1"
+        android:icon="@drawable/menu_estrella" app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/MenuOp2" android:title="Opcion 2"
+        android:icon="@drawable/menu_brujula" app:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/MenuOp3" android:title="Opcion 3"
+        android:icon="@drawable/menu_direccion" app:showAsAction="never">
+        <menu>
+            <item android:id="@+id/SubMenuOp1"
+                android:title="Opcion 3.1" />
+            <item android:id="@+id/SubMenuOp2"
+                android:title="Opcion 3.2" />
+        </menu>
+    </item>
+</menu>
