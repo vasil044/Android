@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">DialogFragmentTutorial</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="dialogfragment">Abrir DialogFragment</string>
+    <string name="alertdialogfragment">Abrir Alert DialogFragment</string>
+    <string name="editdialogfragment">Abrir Edit DialogFragment</string>
+    <string name="welcome">Este es un tutorial de DialogFragment</string>
+</resources>

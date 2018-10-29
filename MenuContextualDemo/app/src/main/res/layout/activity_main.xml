@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <TextView android:layout_height="wrap_content"
+        android:layout_width="wrap_content" android:id="@+id/textView1"
+        android:text="Mantén pulsado un elemento del listado"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_marginLeft="3dip" android:layout_marginTop="14dip"></TextView>
+    <!-- Esta Vista dibuja una línea en el UI -->
+    <View android:layout_height="4dip" android:layout_width="wrap_content"
+        android:background="#FF909090" android:layout_marginTop="2dip"/>
+    <ListView android:id="@+id/ListadoPrincipal"
+        android:layout_height="wrap_content" android:layout_width="fill_parent" />
+
+</LinearLayout>
