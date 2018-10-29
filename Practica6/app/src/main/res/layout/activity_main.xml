@@ -34,9 +34,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Alta de contacto"
             android:onClick="Modificar"
-            />
+            android:text="Alta de contacto" />
 
         <Button
             android:id="@+id/button2"
@@ -86,6 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="111"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
@@ -109,6 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="222"
             android:textColor="@android:color/white"
             android:textSize="18sp" />
     </LinearLayout>
