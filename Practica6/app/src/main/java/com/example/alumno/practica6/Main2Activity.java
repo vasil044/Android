@@ -1,25 +1,26 @@
-package com.example.alumno.intentexplicitoapk6;
+package com.example.alumno.practica6;
 
 import android.content.Intent;
-import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
-public class ModificarContacto extends AppCompatActivity {
 
+public class Main2Activity extends AppCompatActivity {
     String r1,r2;
     TextView textView,textView1,textView3;
     int id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.modificar_contacto_activity);
-        textView = (TextView)findViewById(R.id.editTextApellidos);
+        setContentView(R.layout.activity_main2);
+        textView = (TextView)findViewById(R.id.editText);
         textView1 = (TextView)findViewById(R.id.editText2);
         textView3 = (TextView)findViewById(R.id.textView6);
         id=getIntent().getIntExtra("id",0);
-        if(id==R.id.buttonModificarContacto) {
+        if(id==R.id.button2) {
             textView3.setText("Modificar contacto, cambia el nombre y los apellidos");
             r1 = getIntent().getStringExtra("p1");
             r2 = getIntent().getStringExtra("p2");

@@ -4,7 +4,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textViewModificar2"
         android:layout_width="match_parent"
         android:layout_height="66dp"
         android:layout_alignParentStart="true"
@@ -14,7 +14,7 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewApellidos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -25,31 +25,32 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textViewApellidos2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignStart="@+id/textView3"
-        android:layout_marginTop="154dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="146dp"
         android:text="Apellidos"
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editTextApellidos"
         android:layout_width="225dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView3"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
+        android:layout_alignStart="@+id/editTextNombre"
+        android:layout_below="@+id/textViewApellidos2"
         android:ems="10"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editTextNombre"
         android:layout_width="225dp"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/textView4"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textViewApellidos2"
+        android:layout_marginEnd="21dp"
         android:ems="10"
         android:inputType="textPersonName" />
 
@@ -58,7 +59,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignStart="@+id/editText"
+        android:layout_alignStart="@+id/editTextApellidos"
         android:layout_marginBottom="216dp"
         android:text="Aceptar" />
 </RelativeLayout>

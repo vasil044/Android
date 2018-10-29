@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textPrincipal"
         android:layout_width="match_parent"
         android:layout_height="75dp"
         android:layout_margin="10dp"
@@ -35,7 +36,7 @@
         android:text="Modificar Contacto" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textViewDatosContacto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -49,15 +50,35 @@
         android:textSize="18sp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textViewContactoVacio"
         android:layout_width="match_parent"
-        android:layout_height="129dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="0dp"
+        android:layout_below="@+id/textViewDatosContacto"
+        android:gravity="center_horizontal"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="No hay contactos"
         android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/buttonAltaContacto"
+        android:layout_marginTop="232dp"
+        android:text="Nombre: "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/textViewApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/buttonAltaContacto"
+        android:layout_marginBottom="228dp"
+        android:text="Apellidos: "
+        android:textSize="20sp" />
 
 </RelativeLayout>

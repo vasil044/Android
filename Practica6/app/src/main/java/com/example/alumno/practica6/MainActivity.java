@@ -1,5 +1,6 @@
-package com.example.alumno.intentexplicitoapk6;
+package com.example.alumno.practica6;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -13,8 +14,8 @@ import static android.view.View.VISIBLE;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView txv,txv2,nombre,apellido,vacio;
-    Button boton,boton2;
+    TextView txv,txv2,nom,ap,nada;
+    Button b,b2;
     Intent i;
     Toast toast;
     @Override
@@ -23,20 +24,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         txv = (TextView)findViewById(R.id.textView9);
         txv2 = (TextView)findViewById(R.id.textView11);
-        nombre = (TextView)findViewById(R.id.textViewApellidos2);
-        apellido = (TextView)findViewById(R.id.textView10);
-        vacio = (TextView)findViewById(R.id.textView12);
-        i = new Intent(this, ModificarContacto.class);
-        boton = (Button)findViewById(R.id.button);
-        boton2 = (Button)findViewById(R.id.buttonModificarContacto);
-        boton2.setEnabled(false);
-        nombre.setVisibility(INVISIBLE);
-        apellido.setVisibility(INVISIBLE);
+        nom = (TextView)findViewById(R.id.textView4);
+        ap = (TextView)findViewById(R.id.textView10);
+        nada = (TextView)findViewById(R.id.textView12);
+        i = new Intent(this, Main2Activity.class);
+        b = (Button)findViewById(R.id.button);
+        b2 = (Button)findViewById(R.id.button2);
+        b2.setEnabled(false);
+        nom.setVisibility(INVISIBLE);
+        ap.setVisibility(INVISIBLE);
         txv.setVisibility(INVISIBLE);
         txv2.setVisibility(INVISIBLE);
     }
     public void Modificar(View v){
-        if(v.getId()==R.id.buttonModificarContacto) {
+        if(v.getId()==R.id.button2) {
             String s = txv.getText().toString();
             String s2 = txv2.getText().toString();
             i.putExtra("p1", s);
@@ -58,17 +59,17 @@ public class MainActivity extends AppCompatActivity {
             respuesta = data.getStringExtra("nom");
             respuesta2 = data.getStringExtra("apellido");
             if(!(respuesta.equals("")||respuesta2.equals(""))) {
-                nombre.setVisibility(VISIBLE);
-                apellido.setVisibility(VISIBLE);
+                nom.setVisibility(VISIBLE);
+                ap.setVisibility(VISIBLE);
                 txv.setVisibility(VISIBLE);
                 txv2.setVisibility(VISIBLE);
-                vacio.setVisibility(INVISIBLE);
+                nada.setVisibility(INVISIBLE);
                 toast = Toast.makeText(this,"Datos insertados correctamente",Toast.LENGTH_SHORT);
                 toast.show();
                 txv.setText(respuesta);
                 txv2.setText(respuesta2);
-                boton.setEnabled(false);
-                boton2.setEnabled(true);
+                b.setEnabled(false);
+                b2.setEnabled(true);
             }else{
                 toast = Toast.makeText(this,"No has rellenado los dos campos",Toast.LENGTH_SHORT);
                 toast.show();
