@@ -9,30 +9,30 @@ import android.widget.TextView;
 public class ModificarContacto extends AppCompatActivity {
 
     String r1,r2;
-    TextView textView,textView1,textView3;
+    TextView textViewApe,textViewNom,textViewMod;
     int id;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.modificar_contacto_activity);
-        textView = (TextView)findViewById(R.id.editTextApellidos);
-        textView1 = (TextView)findViewById(R.id.editText2);
-        textView3 = (TextView)findViewById(R.id.textView6);
+        textViewNom = (TextView)findViewById(R.id.editTextNombre);
+        textViewApe = (TextView)findViewById(R.id.editTextApellidos);
+        textViewMod = (TextView)findViewById(R.id.textViewModificar2);
         id=getIntent().getIntExtra("id",0);
         if(id==R.id.buttonModificarContacto) {
-            textView3.setText("Modificar contacto, cambia el nombre y los apellidos");
+            textViewMod.setText("Modificar contacto, cambia el nombre y los apellidos");
             r1 = getIntent().getStringExtra("p1");
             r2 = getIntent().getStringExtra("p2");
-            textView.setText(r1);
-            textView1.setText(r2);
+            textViewNom.setText(r1);
+            textViewApe.setText(r2);
         }
     }
     public void respuesta(View v){
 
         Intent datos = new Intent();
         String nom,apellido;
-        nom = textView.getText().toString();
-        apellido = textView1.getText().toString();
+        nom = textViewNom.getText().toString();
+        apellido = textViewApe.getText().toString();
         datos.putExtra("nom",nom);
         datos.putExtra("apellido",apellido);
         setResult(RESULT_OK,datos);
