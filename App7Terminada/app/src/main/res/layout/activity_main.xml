@@ -42,7 +42,6 @@
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:onClick="cargarImagen"
             android:padding="10dp"
             android:text="Seleccionar" />
     </LinearLayout>
@@ -91,6 +90,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="140dp"
             android:layout_marginRight="140dp"
+            android:onClick="cargar"
             android:text="Enviar" />
 
     </LinearLayout>
