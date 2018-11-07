@@ -91,7 +91,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="140dp"
             android:layout_marginRight="140dp"
-            android:text="Enviar" />
+            android:text="Enviar"
+            android:onClick="cargar"/>
 
     </LinearLayout>
 </LinearLayout>
