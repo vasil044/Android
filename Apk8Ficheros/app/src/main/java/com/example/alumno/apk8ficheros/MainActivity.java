@@ -23,26 +23,64 @@ public class MainActivity extends AppCompatActivity {
     Spinner opcion;
     TextView opcSelec;
     ListView lista;
+    Opcion[]peces=new Opcion[26];
+    Opcion[]algas=new Opcion[22];
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         opcion=(Spinner)findViewById(R.id.spinnerOpcion);
         opcSelec=(TextView)findViewById(R.id.textViewOpcSeleccionada);
         lista = (ListView)findViewById(R.id.miLista);
 
+        seleccionarOpcion();
+
+
     }
 
+    public void seleccionarOpcion() {
+        opcion.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                if (opcion.getSelectedItemPosition() == 0) {
+                    opcSelec.setText("Peces");
+                } else {
+                    opcSelec.setText("Algas e invertebrados");
+                }
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+    }
+
+
     public void cargarPeces() throws IOException {
+        String nom;
+        String nomLat;
+        /*
         List<String>nombrePeces=new ArrayList<String>();
+        List<String>nombreLatPeces=new ArrayList<String>();
+        List<String>longitudPeces=new ArrayList<String>();
+        List<String>habitadPeces=new ArrayList<String>();
+        */
         String linea;
+        int cont=0;
 
         InputStream is = this.getResources().openRawResource(R.raw.peces);
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         if (is!=null){
-            while ((linea=reader.readLine())!=null){
+            while ((linea=reader.readLine())!=null&&cont<26){
                 nombrePeces.add(linea.split(",")[0]);
+                nombreLatPeces.add(linea.split(",")[1]);
+                longitudPeces.add(linea.split(",")[2]);
+                habitadPeces.add(linea.split(",")[3]);
+                peces[cont]=(new Opcion(i, words[1], words[2], words[3], words[4]));
+                cont++;
             }
         }
         is.close();
@@ -51,7 +89,9 @@ public class MainActivity extends AppCompatActivity {
         ArrayAdapter<String>adapter= new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,datos);
         lista.setAdapter(adaptador);
     }
+}
 
+/*
     ///   Declaracion de variables   \\\
 
     ///   Declaracion de esteros que corresponden con las imagenes   \\\
@@ -141,13 +181,55 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     });
+    */
 
+    /*
+     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+         spinner = (Spinner)findViewById(R.id.spinner);
+         listaOpciones = (ListView)findViewById(R.id.lstvw);
+        // Creamos los objetos y los guardamos en un array
 
-    public void seleccionarOpcion(){
-        if(opcion.getSelectedItemPosition()==0){
-            opcSelec.setText("Peces");
-        }else{
-            opcSelec.setText("Algas e invertebrados");
+        spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                peces(position);
+
+                listaOpciones.setAdapter(adaptador);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+    }
+
+    public void peces(int position){
+        try {
+            if(position==0){
+                is = getResources().openRawResource(R.raw.peces);
+            }else if(position == 1){
+                is = getResources().openRawResource(R.raw.algaseinvertebrados);
+            }
+
+        bf = new BufferedReader(new InputStreamReader(is));
+        String linea;
+        int i,bab = 0;
+        while ( (linea = bf.readLine())!= null) {
+            String words[] = linea.split(",");
+            i = getResources().getIdentifier(words[0],"drawable",getPackageName());
+            if(bab == 0 ){ //La existencia de esta condición se debe a que sin ella la imagen de la babosa no la introduce
+                i = R.drawable.babosa;// no se donde puede estar el error, si lo encuentras, dímelo por favor.
+                bab++;// Como la babosa es la primera linea, lo he dejado así en plan chapuza.
+            }
+            datos.add(new Data(i, words[1], words[2], words[3], words[4]));
+
         }
+            adaptador = new Adapter(this,datos);
+        }catch (Exception e){}
     }
 }
+     */
+

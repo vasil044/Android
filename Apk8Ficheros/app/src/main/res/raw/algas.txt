@@ -5,8 +5,8 @@ cangrejo,Cangrejo ermitaño,cangrejojpg,Dardanus arrosor,6,Fondo de roca
 Caracola,caracolajpg,,6,Fondo de roca
 coralnaranja,Coral naranja,coralnaranjajpg,Astroides calycularis,50,Fondo de roca
 cystoseira,Cystoseira,cystoseirajpg,Cystoseira mediterranea,20,Fondo de roca
-erizoblanco,Erizo blanco,erizoblancojpg,,12,Fondo de roca
-erizocomun,Erizo común,erizocomunjpg,,8,Fondo de roca
+erizoblanco,Erizo blanco,erizoblancojpg,12,Fondo de roca
+erizocomun,Erizo común,erizocomunjpg,8,Fondo de roca
 erizovioleta,Erizo violeta,erizovioletajpg,Sphaerachinus granularis,12,Fondo de roca
 esponja,Esponja,esponjajpg,Ircinia fasciculata,20,Fondo de roca
 estrellaroja,Estrella roja,estrellarojajpg,Echinaster sepositus,30,Fondo de roca
