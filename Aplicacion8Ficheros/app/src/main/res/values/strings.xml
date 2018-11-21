@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Aplicacion8Ficheros</string>
+    <string-array name="pecesYalgas">
+        <item>Peces</item>
+        <item>Algas e invertebrados</item>
+    </string-array>
 </resources>

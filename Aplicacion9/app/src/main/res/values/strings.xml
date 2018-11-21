@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aplicacion9</string>
+    <string-array name="pecesYalgas">
+        <item>Peces</item>
+        <item>Algas e invertebrados</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
