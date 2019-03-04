@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.samuel.ejemploactionbar.MainActivity">
+    <item
+        android:id="@+id/ItemOpcion1"
+        android:orderInCategory="101"
+        android:title="Opcion1"/>
+    <item
+        android:id="@+id/ItemOpcion2"
+        android:orderInCategory="102"
+        android:title="Opcion2" />
+
+    <item
+        android:id="@+id/ItemOpcionCruz"
+        android:icon="@drawable/cruz_blanca"
+        android:orderInCategory="102"
+        android:title="Opcion3"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/ItemOpcionX"
+        android:icon="@android:drawable/btn_dialog"
+        android:orderInCategory="102"
+        android:title="Opcion4"
+        app:showAsAction="always" />
+</menu>

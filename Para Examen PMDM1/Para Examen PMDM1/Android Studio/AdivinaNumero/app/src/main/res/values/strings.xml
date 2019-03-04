@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AdivinaMiNumero</string>
+    <string name="mensajeInicio">He pensado un número entre 1 y 100. \n ¡Adivina cual es!</string>
+    <string name="mayorQueNum">¡Uy! El número que he pensado es mayor.</string>
+    <string name="menorQueNum">¡Uy! El número que he pensado es menor.</string>
+    <string name="intentos">Intentos: </string>
+    <string name="acierto">¡¡Has acertado!!</string>
+    <string name="toast1">Por favor, introduce un número entero.</string>
+    <string name="toast2">Por favor, introduce un número entre 1 y 100.</string>
+</resources>

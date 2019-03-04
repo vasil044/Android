@@ -1,0 +1,4 @@
+Comandos SQLite:
+.databases
+.tables
+

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samuel.pruebaexam.MainActivity">
+
+    <TextView
+        android:id="@+id/textViewComienzaPor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="17dp"
+        android:layout_y="5dp"
+        android:text="Comienza por:" />
+
+    <EditText
+        android:id="@+id/editText1a"
+        android:layout_width="232dp"
+        android:layout_height="wrap_content"
+        android:layout_x="108dp"
+        android:layout_y="0dp" />
+
+    <TextView
+        android:id="@+id/textViewNombresLocalizados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="69dp"
+        android:text="Nombres localizados:" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="363dp"
+        android:text="Name:" />
+
+    <TextView
+        android:id="@+id/textViewCountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="51dp"
+        android:layout_y="390dp"
+        android:text="Country Code:" />
+
+    <TextView
+        android:id="@+id/textViewDistrict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="51dp"
+        android:layout_y="422dp"
+        android:text="District:" />
+
+    <TextView
+        android:id="@+id/textViewPopulation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="50dp"
+        android:layout_y="456dp"
+        android:text="Population:" />
+
+    <TextView
+        android:id="@+id/nametxt"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_x="177dp"
+        android:layout_y="365dp" />
+
+    <TextView
+        android:id="@+id/cctxt"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_x="175dp"
+        android:layout_y="392dp" />
+
+    <TextView
+        android:id="@+id/districttxt"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_x="177dp"
+        android:layout_y="419dp" />
+
+    <TextView
+        android:id="@+id/populationtxt"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_x="178dp"
+        android:layout_y="453dp" />
+
+    <Button
+        android:id="@+id/button1a"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_x="213dp"
+        android:layout_y="43dp"
+        android:text="Aceptar" />
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="364dp"
+        android:layout_height="263dp"
+        android:layout_x="9dp"
+        android:layout_y="91dp" />
+
+</AbsoluteLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context="com.example.samuel.dosactividadescontactos.MainActivity">
+
+
+    <Button
+        android:id="@+id/botonAlta"
+        android:layout_width="182dp"
+        android:layout_height="59dp"
+        android:layout_x="0dp"
+        android:layout_y="120dp"
+        android:text="Alta de contacto" />
+
+    <Button
+        android:id="@+id/botonModificar"
+        android:layout_width="196dp"
+        android:layout_height="58dp"
+        android:layout_x="187dp"
+        android:layout_y="120dp"
+        android:enabled="false"
+        android:text="Modificación de contacto" />
+
+    <TextView
+        android:id="@+id/textoInferior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="112dp"
+        android:layout_y="190dp"
+        android:elegantTextHeight="false"
+        android:text="Datos de contacto"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textoSinContactos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="225dp"
+        android:text="No has dado de alta ningún contacto."
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textoSuperior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="3dp"
+        android:layout_y="4dp"
+        android:text="Actividad principal. Presiona algún botón para iniciar la subactividad. Primero debes dar de alta un contacto."
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="0dp"
+        android:layout_y="246dp"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+</AbsoluteLayout>

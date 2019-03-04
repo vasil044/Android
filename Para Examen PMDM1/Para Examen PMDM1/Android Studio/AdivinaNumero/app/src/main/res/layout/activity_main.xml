@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.samuel.adivinanumero.MainActivity">
+
+    <TextView
+        android:id="@+id/etiquetaSuperior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="15dp"
+        android:text="He pensado un número entre 1 y 100. \n ¡Adivina cual es!"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/intentalo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etiquetaSuperior"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/etiquetaSuperior"
+        android:layout_marginBottom="84dp"
+        android:text="¡Inténtalo!"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/numero"
+        android:layout_alignBottom="@+id/intentalo"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="23dp"
+        android:layout_marginEnd="23dp" />
+
+    <Button
+        android:id="@+id/probar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/numero"
+        android:layout_alignLeft="@+id/numero"
+        android:layout_alignRight="@+id/numero"
+        android:layout_alignStart="@+id/numero"
+        android:layout_below="@+id/numero"
+        android:layout_marginTop="10dp"
+        android:text="Probar" />
+</RelativeLayout>

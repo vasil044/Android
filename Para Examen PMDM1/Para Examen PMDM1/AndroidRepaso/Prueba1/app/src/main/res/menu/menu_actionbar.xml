@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/ItemOpcionPunto"
+        android:icon="@drawable/puntonegro"
+        android:orderInCategory="102"
+        android:title="NUEVO ARTÍCULO"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/opcionA"
+        android:title="A-Avance Rápido" />
+    <item
+        android:id="@+id/opcionB"
+        android:title="B-Añadir a lista" />
+    <item
+        android:id="@+id/opcionC"
+        android:title="C-Borrar por nombre" />
+</menu>
