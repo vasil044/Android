@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/labelActSecond"
+            android:layout_width="69dp"
+            android:layout_height="36dp"
+            android:layout_alignTop="@+id/spinner"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="-4dp"
+            android:text="Tipo"
+            android:textColor="@android:color/background_light"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="266dp"
+            android:layout_height="36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@android:color/background_light" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTitulo"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editTextInformacion"
+            android:layout_width="348dp"
+            android:layout_height="164dp"
+            android:layout_margin="10dp"
+            android:background="@android:color/background_light"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewInferior"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginLeft="70dp"
+            android:text="Pulse Aceptar para guardar los cambios"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:id="@+id/buttonAceptar"
+            android:layout_width="244dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Aceptar" />
+
+    </LinearLayout>
+
+</LinearLayout>

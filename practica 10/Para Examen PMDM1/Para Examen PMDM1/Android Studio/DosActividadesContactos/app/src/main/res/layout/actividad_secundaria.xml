@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical"
+    tools:context="com.example.samuel.dosactividadescontactos.Main2Activity">
+
+    <TextView
+        android:id="@+id/textoSuperiorSec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="7dp"
+        android:layout_y="1dp"
+        android:text="Alta de contacto. Indica el nombre y los apellidos."
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="244dp"
+        android:layout_height="43dp"
+        android:layout_x="84dp"
+        android:layout_y="50dp"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/holo_orange_dark" />
+
+    <TextView
+        android:id="@+id/textViewNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="10dp"
+        android:layout_y="68dp"
+        android:text="Nombre: "
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/textoApellidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="11dp"
+        android:layout_y="114dp"
+        android:text="Apellidos: "
+        android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/buttonAceptarSec"
+        android:layout_width="288dp"
+        android:layout_height="wrap_content"
+        android:layout_x="33dp"
+        android:layout_y="156dp"
+        android:text="Aceptar(finaliza esta subactividad)" />
+
+    <EditText
+        android:id="@+id/editTextApellidos"
+        android:layout_width="244dp"
+        android:layout_height="38dp"
+        android:layout_x="85dp"
+        android:layout_y="99dp"
+        android:background="@android:color/background_light"
+        android:textColor="@android:color/holo_orange_dark" />
+
+</AbsoluteLayout>
